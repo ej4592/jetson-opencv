@@ -1,0 +1,630 @@
+Build output check failed:
+    Regex: 'argument .* is not valid'
+    Output line: 'cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type  -Werror=non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_208a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_208a7.dir/build.make CMakeFiles/cmTC_208a7.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_208a7.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -o CMakeFiles/cmTC_208a7.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_208a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_208a7.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_208a7.dir/src.c.o  -o cmTC_208a7 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a82b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a82b.dir/build.make CMakeFiles/cmTC_2a82b.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a82b.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -std=c++11 -o CMakeFiles/cmTC_2a82b.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_2a82b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a82b.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_2a82b.dir/src.cxx.o  -o cmTC_2a82b 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b74cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b74cf.dir/build.make CMakeFiles/cmTC_b74cf.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b74cf.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wstrict-prototypes -std=c++11 -o CMakeFiles/cmTC_b74cf.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_b74cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b74cf.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_b74cf.dir/src.cxx.o  -o cmTC_b74cf 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3efe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b3efe.dir/build.make CMakeFiles/cmTC_b3efe.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3efe.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -o CMakeFiles/cmTC_b3efe.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_b3efe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3efe.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_b3efe.dir/src.c.o  -o cmTC_b3efe 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wsuggest-override'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a1c2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1c2b.dir/build.make CMakeFiles/cmTC_a1c2b.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a1c2b.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wsuggest-override -o CMakeFiles/cmTC_a1c2b.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_a1c2b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1c2b.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_a1c2b.dir/src.c.o  -o cmTC_a1c2b 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71e66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71e66.dir/build.make CMakeFiles/cmTC_71e66.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71e66.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_71e66.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_71e66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71e66.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_71e66.dir/src.c.o  -o cmTC_71e66 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_548f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_548f7.dir/build.make CMakeFiles/cmTC_548f7.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_548f7.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -std=c++11 -o CMakeFiles/cmTC_548f7.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking CXX executable cmTC_548f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_548f7.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_548f7.dir/src.cxx.o  -o cmTC_548f7 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_069e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_069e4.dir/build.make CMakeFiles/cmTC_069e4.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_069e4.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_069e4.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking C executable cmTC_069e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_069e4.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_069e4.dir/src.c.o  -o cmTC_069e4 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ab8f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab8f9.dir/build.make CMakeFiles/cmTC_ab8f9.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab8f9.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/cmTC_ab8f9.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_ab8f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab8f9.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_ab8f9.dir/src.c.o  -o cmTC_ab8f9 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the _aligned_malloc exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_98be1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98be1.dir/build.make CMakeFiles/cmTC_98be1.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98be1.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_98be1.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_aligned_malloc’ undeclared (first use in this function); did you mean ‘__builtin_malloc’?
+   return ((int*)(&_aligned_malloc))[argc];
+                   ^~~~~~~~~~~~~~~
+                   __builtin_malloc
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+              ^~~~
+CMakeFiles/cmTC_98be1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_98be1.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_98be1.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_98be1/fast' failed
+make: *** [cmTC_98be1/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-cast-function-type'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc4d2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc4d2.dir/build.make CMakeFiles/cmTC_cc4d2.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc4d2.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -Wno-undef -Wno-strict-prototypes  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-cast-function-type -o CMakeFiles/cmTC_cc4d2.dir/src.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+Linking C executable cmTC_cc4d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc4d2.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -Wno-undef -Wno-strict-prototypes  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_cc4d2.dir/src.c.o  -o cmTC_cc4d2 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-inconsistent-missing-override'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80bf3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80bf3.dir/build.make CMakeFiles/cmTC_80bf3.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_80bf3.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-inconsistent-missing-override -std=c++11 -o CMakeFiles/cmTC_80bf3.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’
+Linking CXX executable cmTC_80bf3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80bf3.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_80bf3.dir/src.cxx.o  -o cmTC_80bf3 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1a81f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a81f.dir/build.make CMakeFiles/cmTC_1a81f.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1a81f.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-missing-prototypes -std=c++11 -o CMakeFiles/cmTC_1a81f.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_1a81f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a81f.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_1a81f.dir/src.cxx.o  -o cmTC_1a81f 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6b703/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6b703.dir/build.make CMakeFiles/cmTC_6b703.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6b703.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-tautological-undefined-compare -std=c++11 -o CMakeFiles/cmTC_6b703.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’
+Linking CXX executable cmTC_6b703
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b703.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_6b703.dir/src.cxx.o  -o cmTC_6b703 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14a07/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14a07.dir/build.make CMakeFiles/cmTC_14a07.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14a07.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-shorten-64-to-32 -std=c++11 -o CMakeFiles/cmTC_14a07.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’
+Linking CXX executable cmTC_14a07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14a07.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_14a07.dir/src.cxx.o  -o cmTC_14a07 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’'
+Compilation failed:
+    source file: '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56bb9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56bb9.dir/build.make CMakeFiles/cmTC_56bb9.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56bb9.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-enum-compare-switch -std=c++11 -o CMakeFiles/cmTC_56bb9.dir/src.cxx.o -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’
+Linking CXX executable cmTC_56bb9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56bb9.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_56bb9.dir/src.cxx.o  -o cmTC_56bb9 
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6bb00/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6bb00.dir/build.make CMakeFiles/cmTC_6bb00.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6bb00.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_6bb00.dir/CheckIncludeFile.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/videoio.h: No such file or directory
+ #include <sys/videoio.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_6bb00.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6bb00.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_6bb00.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6bb00/fast' failed
+make: *** [cmTC_6bb00/fast] Error 2
+
+
+Determining if the CL_VERSION_2_2 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5eb7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5eb7.dir/build.make CMakeFiles/cmTC_d5eb7.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5eb7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_d5eb7.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_d5eb7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d5eb7.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d5eb7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d5eb7/fast' failed
+make: *** [cmTC_d5eb7/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_2
+  return ((int*)(&CL_VERSION_2_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_2_1 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3dbd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3dbd5.dir/build.make CMakeFiles/cmTC_3dbd5.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3dbd5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_3dbd5.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_3dbd5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3dbd5.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3dbd5.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3dbd5/fast' failed
+make: *** [cmTC_3dbd5/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_1
+  return ((int*)(&CL_VERSION_2_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc4c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc4c4.dir/build.make CMakeFiles/cmTC_cc4c4.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc4c4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_cc4c4.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_cc4c4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cc4c4.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cc4c4.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cc4c4/fast' failed
+make: *** [cmTC_cc4c4/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_2 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2448/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2448.dir/build.make CMakeFiles/cmTC_a2448.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2448.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_a2448.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a2448.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a2448.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a2448.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a2448/fast' failed
+make: *** [cmTC_a2448/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_2
+  return ((int*)(&CL_VERSION_1_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_1 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c9be7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9be7.dir/build.make CMakeFiles/cmTC_c9be7.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9be7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_c9be7.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_c9be7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c9be7.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c9be7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c9be7/fast' failed
+make: *** [cmTC_c9be7/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_1
+  return ((int*)(&CL_VERSION_1_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_0 exist failed with the following output:
+Change Dir: /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a121c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a121c.dir/build.make CMakeFiles/cmTC_a121c.dir/build
+make[1]: Entering directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a121c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_a121c.dir/CheckSymbolExists.c.o   -c /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a121c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a121c.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a121c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a121c/fast' failed
+make: *** [cmTC_a121c/fast] Error 2
+
+File /home/jetson/SourceCode/workspace/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_0
+  return ((int*)(&CL_VERSION_1_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

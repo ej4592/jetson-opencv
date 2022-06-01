@@ -1,0 +1,4294 @@
+#use_cache "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache"
+#do_unpack "v0.1.1f.zip" "b624b995ec9c439cbc2e9e6ee940d3a2" "https://github.com/opencv/ade/archive/v0.1.1f.zip" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/3rdparty/ade"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip" "https://github.com/opencv/ade/archive/v0.1.1f.zip"
+#try 1
+#   Trying 140.82.113.3...
+# TCP_NODELAY set
+# Connected to github.com (140.82.113.3) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [2459 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [80 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+#  start date: Mar 15 00:00:00 2022 GMT
+#  expire date: Mar 15 23:59:59 2023 GMT
+#  subjectAltName: host "github.com" matched cert's "github.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/ade/archive/v0.1.1f.zip HTTP/1.1
+# Host: github.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 302 Found
+# Server: GitHub.com
+# Date: Wed, 01 Jun 2022 15:16:08 GMT
+# Content-Type: text/html; charset=utf-8
+# Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+# permissions-policy: interest-cohort=()
+# Location: https://codeload.github.com/opencv/ade/zip/refs/tags/v0.1.1f
+# Cache-Control: max-age=0, private
+# Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+# X-Frame-Options: deny
+# X-Content-Type-Options: nosniff
+# X-XSS-Protection: 0
+# Referrer-Policy: no-referrer-when-downgrade
+# Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ github-production-user-asset-6210df.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+# Content-Length: 0
+# X-GitHub-Request-Id: A9F0:1101:7255F5:EB1DEE:629782B7
+# 
+# Connection #0 to host github.com left intact
+# Issue another request to this URL: 'https://codeload.github.com/opencv/ade/zip/refs/tags/v0.1.1f'
+#   Trying 140.82.113.10...
+# TCP_NODELAY set
+# Connected to codeload.github.com (140.82.113.10) port 443 (#1)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [2456 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [79 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [36 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [36 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.com
+#  start date: Mar 16 00:00:00 2022 GMT
+#  expire date: Mar 16 23:59:59 2023 GMT
+#  subjectAltName: host "codeload.github.com" matched cert's "*.github.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/ade/zip/refs/tags/v0.1.1f HTTP/1.1
+# Host: codeload.github.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [57 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Access-Control-Allow-Origin: https://render.githubusercontent.com
+# content-disposition: attachment; filename=ade-0.1.1f.zip
+# Content-Length: 166594
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: application/zip
+# ETag: "d6c62c0c3b4dc6059be5fd41ab24d5e0b5d7968e0563d1c2f0e56f27d0f4a57f"
+# Strict-Transport-Security: max-age=31536000
+# Vary: Authorization,Accept-Encoding,Origin
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# Date: Wed, 01 Jun 2022 15:16:08 GMT
+# X-GitHub-Request-Id: CD8E:3323:3C476:8F20A:629782B8
+# 
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1082 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1098 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [48 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [824 bytes data]
+# Connection #1 to host codeload.github.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#mkdir "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/3rdparty/ade"
+#unpack "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/3rdparty/ade" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#do_copy "boostdesc_bgm.i" "0ea90e7a8f3f7876d450e4149c97c74f" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ea90e7a8f3f7876d450e4149c97c74f-boostdesc_bgm.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 14852
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "f4d39876234931f4cd9f46e84414d4b9c69717d391e989a93bb66948fb6c2512"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: B832:2600:1FE0F6:2A02AD:629782BE
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:14 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21525-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096575.559234,VS0,VE122
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: da7b5d41741ec6ae446f2be643c11d49bcfccb1e
+# Expires: Wed, 01 Jun 2022 15:21:14 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1072 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ea90e7a8f3f7876d450e4149c97c74f-boostdesc_bgm.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ea90e7a8f3f7876d450e4149c97c74f-boostdesc_bgm.i"
+#do_copy "boostdesc_bgm_bi.i" "232c966b13651bd0e46a1497b0852191" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm_bi.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/232c966b13651bd0e46a1497b0852191-boostdesc_bgm_bi.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 14864
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "63c9f081e31c588e64e041aa89dc8f400709d026f201608ac8e7266545cc7baa"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: 85CA:7529:3DFB8:BAD31:629782BE
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:14 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21523-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096575.782949,VS0,VE26
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 45fc56f3dbda0c964eca564c1508c6b4958c5842
+# Expires: Wed, 01 Jun 2022 15:21:14 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1084 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/232c966b13651bd0e46a1497b0852191-boostdesc_bgm_bi.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm_bi.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/232c966b13651bd0e46a1497b0852191-boostdesc_bgm_bi.i"
+#do_copy "boostdesc_bgm_hd.i" "324426a24fa56ad9c5b8e3e0b3e5303e" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm_hd.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/324426a24fa56ad9c5b8e3e0b3e5303e-boostdesc_bgm_hd.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 7832
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "3f65138873460a77b397eba6720e2a19ac426dd8bc715e1eb0b718904ee672cd"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: B832:2600:1FE0FE:2A02B5:629782BE
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:14 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21528-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096575.896458,VS0,VE88
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 61dbab993e86cac932206e40be7be187c72354de
+# Expires: Wed, 01 Jun 2022 15:21:14 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [942 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/324426a24fa56ad9c5b8e3e0b3e5303e-boostdesc_bgm_hd.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_bgm_hd.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/324426a24fa56ad9c5b8e3e0b3e5303e-boostdesc_bgm_hd.i"
+#do_copy "boostdesc_binboost_064.i" "202e1b3e9fec871b04da31f7f016679f" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_064.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/202e1b3e9fec871b04da31f7f016679f-boostdesc_binboost_064.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 138093
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "bae205040ca21f82923433b5f0f55997208065bde7c22407eaad6b80d7c54a63"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: 122A:2551:C2D35:14B359:629782BF
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:15 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21534-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096575.070589,VS0,VE170
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: cbb33d7cdd75e5bf815d820d9b21272414bbba5a
+# Expires: Wed, 01 Jun 2022 15:21:15 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [372 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [7875 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/202e1b3e9fec871b04da31f7f016679f-boostdesc_binboost_064.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_064.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/202e1b3e9fec871b04da31f7f016679f-boostdesc_binboost_064.i"
+#do_copy "boostdesc_binboost_128.i" "98ea99d399965c03d555cef3ea502a0b" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_128.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/98ea99d399965c03d555cef3ea502a0b-boostdesc_binboost_128.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 275322
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "54f58724d17670b7702ef9695e137286b17516af293a9761ea422d0d63ef750c"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: B832:2600:1FE107:2A02C1:629782BF
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:15 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21547-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096575.339387,VS0,VE106
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 59b747397c9ee472bcfb404b935392c3ff057638
+# Expires: Wed, 01 Jun 2022 15:21:15 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [371 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [14069 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/98ea99d399965c03d555cef3ea502a0b-boostdesc_binboost_128.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_128.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/98ea99d399965c03d555cef3ea502a0b-boostdesc_binboost_128.i"
+#do_copy "boostdesc_binboost_256.i" "e6dcfa9f647779eb1ce446a8d759b6ea" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_256.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/e6dcfa9f647779eb1ce446a8d759b6ea-boostdesc_binboost_256.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 549754
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "5170441d0b803cfdb9971e7164637d566ed19f3e692c9d40ecc41bfad6b9cc56"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: CB7E:72CE:12A61C:1BAC08:629782BF
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:15 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21528-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096576.550189,VS0,VE94
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 4bffd31bc8701c120ba53738eedae4bc48da584a
+# Expires: Wed, 01 Jun 2022 15:21:15 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [372 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [10008 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/e6dcfa9f647779eb1ce446a8d759b6ea-boostdesc_binboost_256.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_binboost_256.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/e6dcfa9f647779eb1ce446a8d759b6ea-boostdesc_binboost_256.i"
+#do_copy "boostdesc_lbgm.i" "0ae0675534aa318d9668f2a179c2a052" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_lbgm.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ae0675534aa318d9668f2a179c2a052-boostdesc_lbgm.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 426280
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "f3d4a74705b7df4677383f120dc191d41412bcc2a9d68182483d1fcaa8c6f3ee"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: 670A:03CF:117C75:1A73B7:629782BF
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:15 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21546-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096576.756053,VS0,VE191
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 879fcef676a9975b74ecfe69f364f65efd40d8fe
+# Expires: Wed, 01 Jun 2022 15:21:15 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [371 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1223 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ae0675534aa318d9668f2a179c2a052-boostdesc_lbgm.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/boostdesc_lbgm.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/boostdesc/0ae0675534aa318d9668f2a179c2a052-boostdesc_lbgm.i"
+#do_copy "vgg_generated_48.i" "e8d0dcd54d1bcfdc29203d011a797179" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_48.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/e8d0dcd54d1bcfdc29203d011a797179-vgg_generated_48.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 773330
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "9712a2b00f558a6635e1c65f92e7b796fa4ac9e7824a0e4e38081647489047d8"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: CB30:6B4B:38B25:B4F74:629782C0
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:16 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21549-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096576.048801,VS0,VE30
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 865eb4f03d34abf3872879c8b316cfd7c28182af
+# Expires: Wed, 01 Jun 2022 15:21:16 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [374 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [4206 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/e8d0dcd54d1bcfdc29203d011a797179-vgg_generated_48.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_48.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/e8d0dcd54d1bcfdc29203d011a797179-vgg_generated_48.i"
+#do_copy "vgg_generated_64.i" "7126a5d9a8884ebca5aea5d63d677225" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_64.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7126a5d9a8884ebca5aea5d63d677225-vgg_generated_64.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 915012
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "6080244e3d6fdff679f450da04af4a0d32d5bdaf3bc30d3ca432ed7e99d0caf5"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: 670A:03CF:117C7A:1A73BE:629782C0
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:16 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21524-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096576.198726,VS0,VE125
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: d1529630e98dd54118459ea2769f36f0f96f0527
+# Expires: Wed, 01 Jun 2022 15:21:16 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [371 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [14819 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7126a5d9a8884ebca5aea5d63d677225-vgg_generated_64.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_64.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7126a5d9a8884ebca5aea5d63d677225-vgg_generated_64.i"
+#do_copy "vgg_generated_80.i" "7cd47228edec52b6d82f46511af325c5" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_80.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7cd47228edec52b6d82f46511af325c5-vgg_generated_80.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 1012932
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "41b934aa1655bb7609e81243de0568fac0682d633a52dd881ef7ccd5a80fc425"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: F038:3C93:1FB2C8:29C991:629782C0
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:16 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21530-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096576.451000,VS0,VE119
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 22c6cb3d48cb550555ef15439ffff7a424028f8b
+# Expires: Wed, 01 Jun 2022 15:21:16 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [14436 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7cd47228edec52b6d82f46511af325c5-vgg_generated_80.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_80.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/7cd47228edec52b6d82f46511af325c5-vgg_generated_80.i"
+#do_copy "vgg_generated_120.i" "151805e03568c9f490a5e3a872777b75" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_120.i"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/151805e03568c9f490a5e3a872777b75-vgg_generated_120.i" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i"
+#try 1
+#   Trying 185.199.108.133...
+# TCP_NODELAY set
+# Connected to raw.githubusercontent.com (185.199.108.133) port 443 (#0)
+# ALPN, offering http/1.1
+# successfully set certificate verify locations:
+#   CAfile: /etc/ssl/certs/ca-certificates.crt
+#   CApath: /etc/ssl/certs
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Client hello (1):
+# [512 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS handshake, Server hello (2):
+# [122 bytes data]
+# [5 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Unknown (8):
+# [25 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Certificate (11):
+# [3051 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, CERT verify (15):
+# [264 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Finished (20):
+# [52 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+# [1 bytes data]
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (OUT), TLS handshake, Finished (20):
+# [52 bytes data]
+# SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+# ALPN, server accepted to use http/1.1
+# Server certificate:
+#  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
+#  start date: Mar 18 00:00:00 2022 GMT
+#  expire date: Mar 21 23:59:59 2023 GMT
+#  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
+#  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+#  SSL certificate verify ok.
+# [5 bytes data]
+# TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# GET /opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i HTTP/1.1
+# Host: raw.githubusercontent.com
+# User-Agent: curl/7.58.0
+# Accept: */*
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+# [1 bytes data]
+# TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+# [209 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# HTTP/1.1 200 OK
+# Connection: keep-alive
+# Content-Length: 1257733
+# Cache-Control: max-age=300
+# Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+# Content-Type: text/plain; charset=utf-8
+# ETag: "0497dfb95e9b1f2612c03e3862e51b0b10de8cd899a78d2dc72d6103dae12799"
+# Strict-Transport-Security: max-age=31536000
+# X-Content-Type-Options: nosniff
+# X-Frame-Options: deny
+# X-XSS-Protection: 1; mode=block
+# X-GitHub-Request-Id: E13E:6609:20A3FB:2AD449:629782C0
+# Accept-Ranges: bytes
+# Date: Wed, 01 Jun 2022 15:16:16 GMT
+# Via: 1.1 varnish
+# X-Served-By: cache-cmh21536-CMH
+# X-Cache: MISS
+# X-Cache-Hits: 0
+# X-Timer: S1654096577.697488,VS0,VE168
+# Vary: Authorization,Accept-Encoding,Origin
+# Access-Control-Allow-Origin: *
+# X-Fastly-Request-ID: 3779156d42535ecb54d80d61136337629b3b072d
+# Expires: Wed, 01 Jun 2022 15:21:16 GMT
+# Source-Age: 0
+# 
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [370 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1378 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [1226 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16348 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [12552 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [16384 bytes data]
+# [5 bytes data]
+# TLSv1.3 (IN), TLS Unknown, Unknown (23):
+# [1 bytes data]
+# [925 bytes data]
+# Connection #0 to host raw.githubusercontent.com left intact
+# 
+
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/151805e03568c9f490a5e3a872777b75-vgg_generated_120.i"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/downloads/xfeatures2d/vgg_generated_120.i" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/xfeatures2d/vgg/151805e03568c9f490a5e3a872777b75-vgg_generated_120.i"
+#do_copy "face_landmark_model.dat" "7505c44ca4eb54b4ab1e4777cb96ac05" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat" "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/share/opencv4/testdata/cv/face/"
+#missing "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/share/opencv4/testdata/cv/face//face_landmark_model.dat"
+#cmake_download "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat"
+#try 1
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat"
+#copy "/home/jetson/SourceCode/workspace/opencv-4.5.0/release/share/opencv4/testdata/cv/face//face_landmark_model.dat" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/data/7505c44ca4eb54b4ab1e4777cb96ac05-face_landmark_model.dat"

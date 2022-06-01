@@ -1,0 +1,5 @@
+#use_cache "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache"
+#do_unpack "v0.1.1f.zip" "b624b995ec9c439cbc2e9e6ee940d3a2" "https://github.com/opencv/ade/archive/v0.1.1f.zip" "/home/jetson/SourceCode/workspace/opencv-4.5.0/build/3rdparty/ade"
+#check_md5 "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#mkdir "/home/jetson/SourceCode/workspace/opencv-4.5.0/build/3rdparty/ade"
+#unpack "/home/jetson/SourceCode/workspace/opencv-4.5.0/build/3rdparty/ade" "/home/jetson/SourceCode/workspace/opencv-4.5.0/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
